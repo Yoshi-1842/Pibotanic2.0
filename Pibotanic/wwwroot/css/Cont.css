@@ -1,0 +1,28 @@
+﻿
+.caja2 {
+    width: 700px;
+    height: 300px;
+    padding: 3px;
+    text-align: center;
+    background-color: rgb(0, 223, 231);
+    margin-left: 300px;
+    color: rgb(46, 73, 195);
+    font-size: 18px;
+    list-style: none;
+}
+
+    .caja2 > li > a {
+        text-decoration: none;
+    }
+
+        .caja2 > li > a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+.caja3 {
+    border: 10px rgb(15, 187, 218) solid;
+    width: 800px;
+    height: 600px;
+    margin-left: 250px;
+}
+
