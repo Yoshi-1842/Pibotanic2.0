@@ -54,6 +54,11 @@ namespace Pibotanic.Controllers
             return View();
         }
 
+        public IActionResult Metododepago()
+        {
+            return View();
+        }
+
         // POST: Compras/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -65,7 +70,7 @@ namespace Pibotanic.Controllers
             {
                 _context.Add(compra);
                 await _context.SaveChangesAsync();
-                TempData["mssg"] = "Gracias por tu compra.";
+                TempData["mssg"] = "Registro exitoso.";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ProductoID"] = new SelectList(_context.Productos, "ProductoID", "ProductoID", compra.ProductoID);
