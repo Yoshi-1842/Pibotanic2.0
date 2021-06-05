@@ -1,11 +1,16 @@
 ﻿body {
-    
+    background-image: url("https://fondosmil.com/fondo/26760.jpg");
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    color: black;
 }
 
-.article1 {
-    width:100%;
-    height: 600px;
-    background-image: url(../Imagenes/imgP/imagen5.jpeg);
+.FONDO {
+    width: 100%;
+    height: 650px;
+    background-image: url(../Imagenes/ImgIndex/plantasf.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -14,47 +19,150 @@
     display: flex;
 }
 
-    .article1 img {
-        padding: 50px;
+.losh2 {
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    padding-top: 200px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.plantalogo {
+    background-image: url(../Imagenes/ImgIndex/plantalogo2.png);
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+    margin-left: 10px;
+    margin-top: -200px;
+}
+
+.circulo {
+    width: 415px;
+    height: 415px;
+    border-radius: 50%;
+    background: none;
+    border: white 15px solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: -180px;
+}
+
+.frase {
+    position: absolute;
+    margin-top: 35%;
+    width: 100%;
+    height: 20%;
+}
+
+    .frase p {
+        font-size: 70px;
+        color: white;
+        text-align: center;
     }
 
-    .article1 h1 {
-        color: rgb(255, 255, 255);
-        font-size: 50px;
+.losh1 {
+    font-size: 65px;
+    text-align: center;
+    padding-top: 200px;
+    -webkit-text-fill-color: rgb(40, 180, 126);
+    -webkit-text-stroke: 2px black;
+}
+
+.losh3 {
+    font-size: 30px;
+    color: black;
+}
+
+p {
+    font-size: 15px;
+}
+
+.abono {
+    text-align: center;
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-top: 200px;
+}
+
+    .abono p {
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
-.article2 h1 {
-    text-align: center;
-    padding: 60px;
-    font-size: 50px;
+    .abono .lista {
+        font-size: 25px;
+        text-align: justify;
+        line-height: 50px;
+        border-left: rgb(43, 226, 195) 5px solid;
+    }
+
+.conteiner {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10%;
+    margin: auto;
 }
 
-.caja1 {
-    height: 1500px;
-    background-color: rgb(5, 236, 121);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+    .conteiner .card {
+        width: 330px;
+        height: 450px;
+        border-radius: 8px;
+        box-shadow: 0 8px 8px #00ac2b;
+        overflow: hidden;
+        margin: 30px;
+        text-align: center;
+        transition: all 0.25s;
+    }
 
-.imagen1 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding: 20px;
-}
+        .conteiner .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 12px 16px rgb(44, 56, 55);
+        }
 
-.imagen2 {
-    padding: 20px;
-}
+        .conteiner .card img {
+            width: 330px;
+            height: 220px;
+        }
 
-.imagen3 {
-    grid-row: 1/3;
-    grid-column: 2/3;
-    padding: 20px;
-}
+        .conteiner .card h4 {
+            font-weight: 600;
+            font-size: 20px;
+        }
 
-.imagen4 {
-    grid-row: 3/4;
-    grid-column: 1/3;
-    padding: 20px;
-    text-align: center;
-}
+        .conteiner .card p {
+            padding: 0 1rem;
+            font-weight: 300;
+            font-size: 16px;
+            color: #969593;
+        }
+
+        .conteiner a {
+            background-color: rgb(255, 255, 255);
+            border-radius: 3px;
+            border: 3px solid #00CBE2;
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+            color: #00CBE2;
+            margin-top: 20px;
+            transition: 0.5s;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+            .conteiner a:hover {
+                background-color: #00B5C9;
+                border: 3px solid #00B5C9;
+                color: white;
+                transform: scale(1.1);
+            }
