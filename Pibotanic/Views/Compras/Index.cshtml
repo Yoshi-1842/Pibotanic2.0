@@ -4,7 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
+<link rel="stylesheet" href="~/css/btncompra.css">
+
 <h1>Compras</h1>
+<div class="boton">
+    <a asp-action="Metododepago">Metodos de pago</a>
+</div>
 
 <p>
     <a asp-action="Create">Agregar venta</a>
@@ -46,6 +51,8 @@
     if (strValue !== null && strValue !== "") {
         Swal.fire("", strValue, "success");
         };
-        
+
     </script>
+    
+
 }
