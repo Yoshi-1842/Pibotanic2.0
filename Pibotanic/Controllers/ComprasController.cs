@@ -70,7 +70,7 @@ namespace Pibotanic.Controllers
             {
                 _context.Add(compra);
                 await _context.SaveChangesAsync();
-                TempData["mssg"] = "Registro exitoso.";
+                TempData["mssg"] = "Muchas gracias por su compra, por favor realice el pago y mande un comprobante al correo de la empresa pibotanic5614@gmail.com .";
                 return RedirectToAction(nameof(Index));
             }
             ViewData["ProductoID"] = new SelectList(_context.Productos, "ProductoID", "ProductoID", compra.ProductoID);

@@ -3,7 +3,12 @@
 @{
     ViewData["Title"] = "Create";
 }
-
+<head>
+    <title>Pagos</title>
+    <link href='https://www.soengsouy.com/favicon.ico' rel='icon' type='image/x-icon' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/pago.css">
+</head>
 <h1>Compra</h1>
 
 <hr />
@@ -20,9 +25,98 @@
                 <label asp-for="Producto" class="control-label"></label>
                 <select asp-for="ProductoID" class="form-control" asp-items="ViewBag.ProductoID"></select>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Crear compra" class="btn btn-primary" />
-            </div>
+            <html>
+            <body>
+
+                <div class="row">
+                    <div class="col-75">
+                        <div class="Metodo">
+                            <form id="validate" action="/action_page.php">
+                                <div class="row">
+                                    <div class="col-50">
+                                        <h3>Datos de envio</h3>
+                                        <label for="fname"><i class="fa fa-user"></i> Nombre Completo</label>
+                                        <input type="text" id="fname" name="fullname" placeholder="pibotanic" required>
+                                        <label for="email"><i class="fa fa-envelope"></i> Correo electronico</label>
+                                        <input type="text" id="email" name="email" placeholder="ejemplo12@gmail.com" required>
+                                        <label for="adr"><i class="fa fa-address-card-o"></i> Dirrecion</label>
+                                        <input type="text" id="adr" name="address" placeholder="Direccion" required>
+                                        <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+                                        <input type="text" id="city" name="city" placeholder="Ciudad" required>
+
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <label for="state">Estado</label>
+                                                <input type="text" id="state" name="state" placeholder="Ciudad" required>
+                                            </div>
+
+                                        </div>
+                                    </div> 
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- script validate js -->
+                <script>
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            city: {
+                required: true,
+            },
+            state: {
+                required: true,
+            },
+            zip: {
+                required: true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnumber: {
+                required: true,
+            },
+            expmonth: {
+                required: true,
+            },
+            expyear: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+
+        },
+        messages: {
+            fullname:"Please input full name*",
+            email:"Please input email*",
+            city:"Please input city*",
+            address:"Please input address*",
+            state:"Please input state*",
+            zip:"Please input address*",
+            cardname:"Please input card name*",
+            cardnumber:"Please input card number*",
+            expmonth:"Please input exp month*",
+            expyear:"Please input exp year*",
+            cvv:"Please input cvv*",
+        },
+    });
+                </script>
+            </body>
+        </html>
+
+        <div class="form-group">
+            <input type="submit" value="Crear compra" class="btn btn-primary" />
+        </div>
         </form>
     </div>
 </div>
