@@ -64,6 +64,14 @@
         text-align: center;
     }
 
+.info {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 60px;
+    -webkit-text-fill-color: rgb(40, 180, 126);
+    -webkit-text-stroke: 2px black;
+}
+
 .losh1 {
     font-size: 65px;
     text-align: center;
